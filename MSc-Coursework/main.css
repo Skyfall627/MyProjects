@@ -1,0 +1,193 @@
+/* Fonts imported from google */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Oswald', sans-serif;;
+  }
+
+body{
+  
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(37, 37, 37);
+  background-image: url("Brookes Wallpaper.jpg")
+}
+
+
+.container{
+  position: relative;
+  max-width: 630px;
+  width: 100%;
+  background-color: rgb(37, 37, 37);
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(17, 17, 17, 0.358);
+  overflow: hidden;
+}
+
+.container .forms{
+  display: flex;
+  align-items: center;  
+  height: 440px;
+  width: 200%;
+  transition: height 0.2s ease;
+}
+
+.container .form{
+  width: 50%;
+  padding: 30px;
+  transition: margin-left 0.18s ease;    
+}
+
+.container.active .login{
+  margin-left: -50%;
+  opacity: 0;
+  transition: margin-left 0.18s ease, opacity 0.15s ease;    
+}
+
+.container .register{
+  opacity: 0;
+  transition: opacity 0.09s ease;
+}
+
+.container.active .register{
+  opacity: 1;
+  transition: opacity 0.2s ease;    
+}
+
+.container.active .forms{
+  height: 600px;
+}
+
+.container .form .title{
+  position: relative;
+  font-size: 27px;
+  font-weight: 100;
+  color: azure;
+}
+
+.form .title::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 150px;
+  background-color: azure;
+  border-radius: 25px;
+}
+
+.form .input-field{
+  position: relative;
+  height: 50px;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.input-field input{
+  background-color: transparent;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  padding: 0 35px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: azure;
+  border-bottom: 2px solid azure;
+  border-top: 2px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.input-field input:is(:focus, :valid){
+  border-bottom-color: yellow ;
+}
+
+.input-field i{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-41%);
+  font-size: 23px;
+  color: azure;
+  transition: all 0.2s ease;
+}
+
+.input-field input:is(:focus, :valid) ~ i{
+  color: yellow ;
+}
+
+.input-field i.icon{
+  left: 0;
+}
+
+.input-field i.showpw{
+  right: 0;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.input-field i.Go{
+  right: 0;
+}
+
+.button {
+  border: none;
+  font-size: 19px;
+  color: azure;
+  font-weight: 500;
+  letter-spacing: 1px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease,box-shadow 0.15s ease-in-out;
+  text-align: center;
+  vertical-align: middle;
+  background-color: transparent;
+  border: 1px solid transparent;
+  line-height: 1.5;
+  margin: auto;
+  margin-bottom: -4%;
+}
+    
+#LRG {
+  color: azure;
+}
+
+#LRG:hover {
+  color: yellow;
+}
+
+.button button:hover{
+  color: yellow;
+}
+
+.button button:hover ~ i{
+  color: yellow;
+}
+
+.form .login-register{
+  margin-top: 30px;
+  text-align: center;
+  color: azure;
+}
+
+.error {
+  width: 92%; 
+  margin: 0px auto; 
+  padding: 10px; 
+  border: 1px solid #a94442; 
+  color: #a94442; 
+  background: #f2dede; 
+  border-radius: 5px; 
+  text-align: left;
+}
+.success {
+  color: #3c763d; 
+  background: #dff0d8; 
+  border: 1px solid #3c763d;
+  margin-bottom: 20px;
+}
+

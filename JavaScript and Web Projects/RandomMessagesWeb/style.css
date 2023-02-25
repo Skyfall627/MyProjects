@@ -1,0 +1,104 @@
+/* Fonts imported from google */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  }
+
+body{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(12, 39, 39);
+}
+
+h1{
+  font-family: 'Oswald', sans-serif;;
+  font-size: 2rem;
+  color: azure;
+}
+
+.container{
+  position: absolute;
+  max-width: 800px;
+  width: 100%;
+  height: 300px;
+  background-color: rgb(37, 37, 37);
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(17, 17, 17, 0.358);
+  overflow: hidden;
+}
+
+.container .form{
+  height: 200px;
+  padding: 30px;
+  width: 100%;
+}
+
+.container .title{
+  font-size: 30px;
+  font-weight: 100;
+  text-align: center;
+  display: block;
+  margin: auto;
+  width: 300px;
+  color: rgb(39, 127, 127);
+  border-bottom: 2px solid azure;
+}
+
+.input-field {
+  background-color: transparent;
+  height: 100px;
+  text-align: center;
+  width: 80%;
+  padding: auto 50px;
+  color: azure;
+  border-bottom: 2px solid azure;
+  border-top: 2px solid transparent;
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+  pointer-events: none;
+}
+
+.button {
+  color: azure;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  border-radius: 0px;
+  cursor: pointer;
+  text-align: center;
+  background-color: transparent;
+  border: 1px solid transparent;
+  margin: auto;
+  border-bottom: 2px solid azure;
+  display: block;
+}
+
+button:hover{
+  color: yellow;
+  border-bottom-color: yellow;
+}
+
+.error {
+  width: 92%; 
+  margin: 0px auto; 
+  padding: 10px; 
+  border: 1px solid #a94442; 
+  color: #a94442; 
+  background: #f2dede; 
+  border-radius: 5px; 
+  text-align: left;
+}
+.success {
+  color: #3c763d; 
+  background: #dff0d8; 
+  border: 1px solid #3c763d;
+  margin-bottom: 20px;
+}
+

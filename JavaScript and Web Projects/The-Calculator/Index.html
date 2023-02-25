@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+
+    <title>The Calculator</title>
+</head>
+<body>
+
+<div class="container">
+    
+    <input id="operation" value="0" type="hidden"> <!-- Place to store the operation math signs -->
+    <input id="storage" value="" type="hidden"> <!-- Place to store the operation math 1rst number-->
+    <input id="equivalent" value="0" type="hidden">
+    <input id="decimalVar" value="0" type="hidden">
+
+    <h1>The Calculator</h1>
+    
+    <table id="calc">
+        <caption><input id="results" type="text" value="0" readonly></caption>
+        <tr>
+            <td><input id="allclear" class="button" value="AC" type="button" onclick="allClear()"></td>
+            <td><input id="square" class="button" value="x&sup2;" type="button" onclick="square()"></td>
+            <td><input id="percent" class="button" value="%" type="button" onclick="percent()"></td>
+            <td><input id="divide" class="button" value="&divide;" type="button" onclick="operators(4)"></td>
+        </tr>
+        
+        <tr>
+            <td><input id="seven" class="button" value="7" type="button" onclick="input(7)"></td>
+            <td><input id="eight" class="button" value="8" type="button" onclick="input(8)"></td>
+            <td><input id="nine" class="button" value="9" type="button" onclick="input(9)"></td>
+            <td><input id="multiply" class="button" value="&times;" type="button" onclick="operators(3)"></td>
+        </tr>
+        
+        <tr>
+            <td><input id="four" class="button" value="4" type="button" onclick="input(4)"></td>
+            <td><input id="five" class="button" value="5" type="button" onclick="input(5)"></td>
+            <td><input id="six" class="button" value="6" type="button" onclick="input(6)"></td>
+            <td><input id="substract" class="button" value="&minus;" type="button" onclick="operators(2)"></td>
+        </tr>
+        
+        <tr>
+            <td><input id="one" class="button" value="1" type="button" onclick="input(1)"></td>
+            <td><input id="two" class="button" value="2" type="button" onclick="input(2)"></td>
+            <td><input id="three" class="button" value="3" type="button" onclick="input(3)"></td>
+            <td><input id="add" class="button" value="&plus;" type="button" onclick="operators(1)"></td>
+        </tr>
+
+        <tr>
+            <td><input id="plusminus" class="button" value="&plusmn;" type="button" onclick="plusminus()"></td>
+            <td><input id="zero" class="button" value="0" type="button" onclick="input(0)"></td>
+            <td><input id="decimal" class="button" value="." type="button" onclick="decimalPoint()"></td>
+            <td><input id="equals" class="button" value="=" type="button" onclick="equals()"></td>
+        </tr>
+    </table>
+</div>
+
+        
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>

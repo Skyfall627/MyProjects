@@ -1,0 +1,113 @@
+
+
+
+/* The Navigation Menu */
+.rightbar {
+    height: 100%; 
+    width: 0; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0; 
+    left: 0;
+    background-color: rgb(37, 37, 37); 
+    overflow-x: hidden;
+    padding-top: 60px; 
+    transition: 0.5s; 
+  }
+  
+.rightbar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: azure;
+    display: block;
+    transition: 0.3s;
+  }
+  
+.rightbar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+.rightbar .closebtn:hover {
+  color: yellow;
+}
+
+.rightbar .PP:hover {
+    color: yellow;
+}
+
+.rightbar .II:hover {
+  color: green;
+}
+
+.rightbar .LL:hover {
+  color: rgb(141, 0, 0);
+}
+
+.burger {
+    padding: 15px;
+    color: azure;
+    position: absolute;
+    top: 0;
+    left : 0;
+    width: 100%;
+    background-color: rgb(37, 37, 37); 
+    box-shadow: 0 5px 10px rgba(17, 17, 17, 0.358);
+    overflow: hidden;
+  }
+
+.burger ~i:hover{
+   color: yellow;
+   cursor: pointer;
+}
+
+  /* The Table*/
+
+
+.marking_page {
+  color: azure;
+  border-collapse: collapse;
+  margin: 10px 0;
+  font-size: 0.8em;
+  min-width: 580px;
+  border-radius: 8px 8px 8px 8px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.118);
+}
+
+.marking_page thead tr {
+  background-color: azure;
+  color: black;
+  text-align: left;
+  font-weight: bold;
+}
+
+.marking_page th,
+.marking_page td{
+  padding: 10px 9px;
+}
+
+.marking_page tbody tr {
+  border-bottom: 1px solid azure;
+}
+
+.marking_page tbody tr:nth-of-type(even) {
+  background-color: #292929;
+}
+
+.marking_page tbody tr:last-of-type {
+  border-bottom: 2px solid azure;
+}
+
+.marking_page tbody tr.active_row {
+  font-weight: bold;
+  color: yellow;
+}
+
+.marking_page tbody tr:hover {
+  color: yellow;
+}
